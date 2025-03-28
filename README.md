@@ -255,6 +255,24 @@ Pedidos entre R$50,00 e R$199,99 (inclusive) → "Frete com custo adicional!"
 Pedidos de R$200,00 ou mais → "Frete grátis!"
 ```
 Implemente um pseudocódigo que receba o valor total da compra e exiba a classificação correta do frete para o cliente.
+
+## Resposta - 7:
+```
+var valorProduto = [30, 20, 50, 80]
+for (var i = 0; i < valorProduto.length; i++) {
+    var gastos =+ valorProduto[i];
+}
+
+if(gastos <= 50) {
+    console.log("Você não terá frete grátis.");
+} else if(gastos > 50 && gastos <= 199.99) {
+    console.log("Frete com custo adicional!.");
+} else if(gastos > 200) {
+    console.log("Você terá frete grátis!");
+} else {
+    console.log("Valor inválido.");
+}
+```
 ______
 
 **8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
@@ -285,6 +303,50 @@ Considere a fórumla de atualização velocidade:
     velocidade = velocidadeInicial - desaceleracao * tempo
 ```
 Seu programa deve determinar quanto tempo será necessário para que a sonda atinja uma velocidade segura de pouso, sem ultrapassar os limites estabelecidos.
+
+## Resposta - 9
+```
+function calcularTempoDeDescida(velocidadeInicial, velocidadeSegura, desaceleracao, tempoMaximo) {
+    // Inicializar o tempo em 0
+    let tempo = 0;
+
+    // Verificar se a desaceleração é válida
+    if (desaceleracao <= 0) {
+        throw new Error("Erro: A desaceleração deve ser maior que 0.");
+    }
+
+    // Simular o cálculo de tempo necessário
+    while (tempo <= tempoMaximo) {
+        // Calcular a velocidade atual com base no tempo
+        let velocidadeAtual = velocidadeInicial - (desaceleracao * tempo);
+
+        // Verificar se a velocidade segura foi atingida
+        if (velocidadeAtual <= velocidadeSegura) {
+            return `Velocidade segura atingida em ${tempo} segundos.`;
+        }
+
+        // Incrementar o tempo
+        tempo++;
+    }
+
+    // Caso o tempo máximo seja ultrapassado sem atingir a velocidade segura
+    return "Não foi possível atingir a velocidade segura dentro do tempo máximo permitido.";
+}
+
+// Parâmetros iniciais
+const velocidadeInicial = 5000; // Velocidade inicial em m/s
+const velocidadeSegura = 5;     // Velocidade segura para pouso em m/s
+const desaceleracao = 100;      // Desaceleração em m/s²
+const tempoMaximo = 120;        // Tempo máximo de descida em segundos
+
+// Executar a simulação
+try {
+    const resultado = calcularTempoDeDescida(velocidadeInicial, velocidadeSegura, desaceleracao, tempoMaximo);
+    console.log(resultado);
+} catch (erro) {
+    console.error(erro.message);
+}
+```
 ______
 
 **10)** Em um sistema de análise financeira, as operações de investimento de uma empresa podem ser representadas por matrizes, onde cada linha representa um tipo de investimento e cada coluna representa um período de tempo.
