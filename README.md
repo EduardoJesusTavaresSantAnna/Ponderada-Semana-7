@@ -36,11 +36,6 @@ D) O código avalia a expressão booleana, imprime `false` e ordena os valores e
 
 ## Resposta - 1
 **A) O código avalia a expressão booleana, imprime `true`, calcula o produto dos números na lista e imprime o resultado no console.**
-
-Justificativa:
-  No (let = Resultado) são realizados algumas condições para que seja retornado um valor de "true" ou "false", para isso é comparado a primeira afirmativa, que para retornar "true" precisa ser verdadeira junto da segunda. Isso ocorre devido ao operador lógico (&&) que diz, que amabas as afirmações devem ser veradeiras para que seja retornado "true".
-  Já com relação a (const produto = 1) e o array valores, é realizado por meio desse comando: "( for (let j = 0; j < valores.length; j++) { / produto *= valores[j]; / } ", uma operação entre a varíavel produto que multiplica com o valor, seguinda a ordem, do array. Que graças ao operador lógico "*=", usado na linha (produto *= valores[j];) que atualiza o valor de produto e logo realiza novamente a operação de multiplicação desse novo valor de produto com o próximo item do array valores, resultando na impressão do valor da multiplicação sucessiva desses elementos do array.
-
 ______
 
 **2)** O código a seguir contém duas funções que calculam o limite de crédito de um cliente com base nos seus gastos e na renda mensal.
@@ -101,6 +96,9 @@ B) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -60
 C) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -200.', enquanto analisarCredito2() exibirá: 'Seu crédito foi aprovado. Saldo disponível: 100.'
 
 D) Ambas as funções exibirão: 'Seu crédito foi aprovado Saldo disponível: 500.'
+
+## Resposta - 2
+**A) Ambas as funções exibirão: 'Seu crédito foi aprovado. Saldo disponível: 400.'**
 ______
 
 **3)** Considere o seguinte trecho de código em JavaScript:
@@ -125,6 +123,9 @@ B) O código verifica se a idade pertence à faixa adulta. Se for, exibe "Você 
 C) O código verifica se a idade está entre 18 e 60 anos e, se for, imprime "Você é um adulto!". Se não estiver nesse intervalo, imprime "Você está na melhor idade!".
 
 D) O código verifica se a idade é menor de 18, entre 18 e 60 ou acima de 60, imprimindo uma mensagem específica para cada caso.
+
+## Resposta - 3
+**B) O código verifica se a idade pertence à faixa adulta. Se for, exibe "Você é um adulto!". Caso contrário, verifica se é menor de idade e exibe "Você é menor de idade!". Se nenhuma das condições anteriores for verdadeira, exibe "Você está na melhor idade!".**
 ______
 
 **4)** Qual será o resultado impresso no console após a execução do seguinte código?
@@ -194,6 +195,18 @@ Dispositivo 4 não pode ser ligado. Energia insuficiente.
 
 Dispositivo 5 não pode ser ligado. Energia insuficiente.
 
+## Resposta - 4
+**D)**
+**Dispositivo 1 ligado. Energia restante: 900**
+
+**Dispositivo 2 ligado. Energia restante: 300**
+
+**Dispositivo 3 ligado com bateria extra. Energia restante: 200**
+
+**Dispositivo 4 não pode ser ligado. Energia insuficiente.**
+
+**Dispositivo 5 não pode ser ligado. Energia insuficiente.**
+
 ______
 
 **5)** Qual é a principal função do método update() em um jogo desenvolvido com Phaser.js?
@@ -207,6 +220,10 @@ B) O método update() é chamado continuamente a cada quadro (frame) do jogo, se
 C) O método update() renderiza todos os sprites na tela e garante que a física do jogo seja processada corretamente.
 
 D) O método update() é chamado apenas uma vez após a criação da cena, sendo utilizado para configurar variáveis iniciais do jogo.
+
+## Resposta - 5
+**B) O método update() é chamado continuamente a cada quadro (frame) do jogo, sendo usado para atualizar a lógica, movimentação e interações dos objetos na cena.**
+
 ______
 
 **6)** Qual é o principal objetivo do módulo Matter.js Physics em Phaser.js?
@@ -221,6 +238,8 @@ C) Renderizar gráficos otimizados para jogos 2D e garantir uma taxa de quadros 
 
 D) Criar animações automáticas para sprites e objetos interativos sem necessidade de programação de movimentação.
 
+## Resposta - 6
+**A) Simular física avançada, incluindo corpos rígidos, colisões complexas e interação entre objetos com gravidade e forças.**
 ______
 
 # Questões dissertativas
